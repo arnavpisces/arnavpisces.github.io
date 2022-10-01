@@ -1,0 +1,167 @@
+:root {
+  --violet: #730ce9;
+  --red: #ee1f1f;
+  --green: #43e910;
+  --yellow: #ffe600;
+  --blue: #00d5ff;
+  --color: #00d5ff;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
+body{
+  /* text-align: center; */
+  margin: 4% 8% 4% 8%;
+  font-size: 2em;
+  background-color: #2098b9 ;
+  color: white;
+  font-family: Montserrat;
+  
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px var(--color),
+      0 0 82px var(--color),
+      0 0 92px var(--color),
+      0 0 102px var(--color),
+      0 0 151px var(--color);
+  font-weight: 400;
+  font-size: 350%;
+}
+.neonText {
+  animation: pulsate 0.11s ease-in-out infinite alternate;    
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px var(--color),
+      0 0 90px var(--color),
+      0 0 100px var(--color),
+      0 0 150px var(--color);
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px var(--color),
+      0 0 73px var(--color),
+      0 0 80px var(--color),
+      0 0 140px var(--color);
+  }
+}
+
+.inner {
+  line-height: 20%;
+}
+.icons{
+  line-height: 20%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly ; */
+
+}
+.no-decoration{
+  text-decoration: none;
+  color: white;
+}
+.icons a{
+  padding-right: 5%;
+  text-decoration: none;
+  color: white;
+}
+.icons a:visited{
+  text-decoration: none;
+  color: white;
+}
+.icons .linkedin{
+  transition: color 0.15s ease;
+}
+.icons .linkedin:hover{
+ color: #0077b5;
+}
+.icons .medium{
+  transition: color 0.15s ease;
+}
+.icons .medium:hover{
+ color: #3c824e;
+}
+.icons .mail{
+  transition: color 0.15s ease;
+}
+.icons .mail:hover{
+ color: #ff6961;
+}
+.icons .phone{
+  transition: color 0.15s ease;
+}
+.icons .phone:hover{
+ color: #FFFFA7;
+}
+.svg-inline--fa{
+  height: 2em;
+}
+.inner h1,h2,h4{
+  font-weight: 600;
+}
+
+.smol{
+  font-weight: 200;
+  font-size: 70%;
+}
+.columns{
+  display: flex;
+  flex-direction: column;
+}
+
+.resume{
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  right: 8%;
+  top: 2%;
+  border: 1px solid;
+  padding: 5px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 4px;
+  transition: color 0.5s ease;
+}
+
+.resume:hover{
+  /* color: black; */
+  /* color: rgb(234, 116, 6); */
+  border: 0px;
+  background-color:rgb(239, 213, 43);
+}
+.resume:hover>a{
+  color: black;
+}
+
+.topright{
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  left: 8%;
+  top: 2%;
+  padding: 5px;
+  transition: color 0.5s ease;
+}
+
+@media only screen and (max-width: 570px) {
+  .inner{
+    line-height: 50%;
+  }
+  .designation{
+    line-height: 100%;
+  }
+}

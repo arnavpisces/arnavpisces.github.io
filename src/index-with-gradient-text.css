@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
+body{
+  margin: 10% 6% 10% 6%;
+  font-size: 200%;
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 800;
+}
+.linear-wipe {
+  /* text-align: ; */
+  font-size: 400%;
+  background: linear-gradient(to right, #FFF 10%, rgb(136, 0, 255) 40%, rgb(0, 179, 255) 60%, rgb(255, 255, 255) 99%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 8s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
