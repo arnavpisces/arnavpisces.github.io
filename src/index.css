@@ -117,6 +117,7 @@ body{
 .smol{
   font-weight: 200;
   font-size: 70%;
+  margin-top: 5%
 }
 .columns{
   display: flex;

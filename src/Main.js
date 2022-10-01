@@ -28,7 +28,7 @@ class Main extends Component {
     return (
       <HashRouter>
         <div class="columns">
-          <span class="resume"><a href="/resume" class="no-decoration" target="_blank" rel="noreferrer">Resume</a></span>
+          <span class="resume"><a href="static/media/resume.7e9e90f6c6d19fe81fcc.pdf" class="no-decoration" target="_blank" rel="noreferrer">Resume</a></span>
           <span class="topright"><a href="www.arnavk.co" class="no-decoration">ArnavK.Co</a></span>
           <div>
             <h1 class="neonText">hey there!</h1>
