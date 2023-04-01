@@ -1,18 +1,18 @@
 [
     {
-        "image": "monzo.png",
+        "image": "git-worktree.webp",
         "title": "Level-Up Productivity with Git Worktrees",
         "description": "A faster way for prototyping & implementing bug-fixes",
         "url": "https://www.linkedin.com/posts/thisisak_use-git-worktree-and-level-up-your-developer-activity-7044912370292322304-Ihfl?utm_source=share&utm_medium=member_desktop"
     },
     {
-        "image": "monzo.png",
+        "image": "cron.webp",
         "title": "Run CronJobs on Github Actions",
         "description": "Check out a novel use-case of auto documenting and pushing python code via crons in GitHub Actions",
         "url": "https://www.linkedin.com/posts/thisisak_push-python-documentation-to-repo-every-day-activity-7024609439185850368-qEHs?utm_source=share&utm_medium=member_desktop"
     },
     {
-        "image": "monzo.png",
+        "image": "code-linting.jpeg",
         "title": "Use Pre-Commit Hooks to Lint your Code",
         "description": "Use Black & Flake8 to auto-lint your python code on every commit",
         "url": "https://example.com/third-item"

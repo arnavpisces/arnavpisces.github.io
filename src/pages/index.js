@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
 
+
 const IndexPage = () => {
   return(
     <Layout pageTitle="ArnavK.co">
