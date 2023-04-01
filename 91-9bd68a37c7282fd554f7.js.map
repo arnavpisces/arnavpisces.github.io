@@ -1,0 +1,1 @@
+{"version":3,"file":"91-9bd68a37c7282fd554f7.js","mappings":"2IAAA,UAAe,IAA0B,mD","sources":["webpack://gatsby-starter-default/./src/images/monzo.png"],"sourcesContent":["export default __webpack_public_path__ + \"static/monzo-bbb4f3f250bbc527920c3c99d960d6fb.png\";"],"names":[],"sourceRoot":""}
