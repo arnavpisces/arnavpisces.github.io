@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300;400&family=Raleway:wght@300;400;500;600&family=Russo+One&display=swap');
+body {
+    background-image: url('../images/prism3.jpg');
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-attachment: fixed;
+  }
+.container {
+    margin:auto;
+    max-width: 650px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    color: rgb(255, 217, 0);
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Monoton', cursive;
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link-item{
+    padding-right:0.5rem;
+}
+.nav-link-text{
+    color: white;
+    font-family: Monoton;
+    font-weight: 300;
+}
+.nav-link-text:hover{
+    color:#f8b11c;
+}
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white; }
+.page-text{
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.5;
+    color:white;
+    margin:auto;
+    font-size: 1.8vw;
+    margin-top:5vw;
+    max-width: 650px;
+}
+.highlight{
+    color:#f8b11c;
+}
+.featured-posts{
+    text-align: left;
+    color:white;
+    font-size: 2.5vh;
+    font-family: Raleway;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.auto-margin{
+    margin:auto;
+    max-width: 650px;
+}
+.head-format{
+    font-size:100%;
+    margin:auto;
+}
+.social-text{
+    display: flex;
+    /* flex-direction: column; */
+    z-index: 5;
+    color: white;
+    margin: 15px auto auto;
+    max-width: 650px;
+}
+.social-text a{
+    padding-right:15px;
+}
+.spotify-icon, .linkedin-icon, .github-icon {
+    color:white;
+}
+.linkedin-icon:hover {
+    color: #0077B5;
+  }
+.spotify-icon:hover {
+  color: #1DB954;
+}
+.github-icon:hover {
+    color: #6f42c1;
+  }
+  
+@media only screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;    
+    }
+    .page-text{
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 400;
+        /* text-align: center; */
+    }   
+}
+@media screen and (max-width: 480px) {    
+.container {
+    display: flex;
+    flex-direction: column;    
+  }
+  .nav-links{
+    margin-top: 0;
+  }
+  .page-text{
+      line-height: 1.5;
+      margin: 0px 15px 0px 15px;
+  }   
+  .heading{
+    font-size: 1.5rem;
+  }
+  .head-format{
+    margin:15px;   
+}
+    .featured-posts{
+        margin:auto;
+        margin: 15px;
+    }
+    .social-text{
+        margin:15px;
+    }
+}
