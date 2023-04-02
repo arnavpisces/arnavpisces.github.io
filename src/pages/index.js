@@ -28,11 +28,11 @@ const ParaAfterBlob = () => {
   );
 };
 
-const Post = ({ headTitle, className  }) => {
+const Post = ({ headTitle, className, link  }) => {
   const classes = className ? `${featuredPosts} ${className}` : featuredPosts;
   return(
     <div className={autoMargin}>
-      <h2 className={classes}>{headTitle}</h2>
+      <Link to href={link} target="_blank"><h2 className={classes}>{headTitle}</h2></Link>
     </div>
   )
 }
@@ -61,7 +61,7 @@ const App = () => {
       <ParaAfterBlob />
       <Post headTitle="Selected Posts" />
       <Posts />
-      <Post headTitle="View More &#8594;" className={headFormat} />
+      <Post headTitle="View More &#8594;" className={headFormat} link="https://www.linkedin.com/in/thisisak/recent-activity/shares/"/>
       <Post headTitle="Socials" />
       <Socials />
       <Footer />

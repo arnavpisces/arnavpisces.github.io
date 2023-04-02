@@ -26,6 +26,7 @@ a{
     padding-left: 0;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .nav-link-item{
     padding-right:0.5rem;
