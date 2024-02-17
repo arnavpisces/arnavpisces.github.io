@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_visiting_card=self.webpackChunkgatsby_visiting_card||[]).push([[196],{9196:function(a,t,b){b.r(t),t.default=b.p+"static/java-bitbucket-871d6b5b0e8704590b04a1fa94664153.webp"}}]);
-//# sourceMappingURL=196-f1416d4a68e407458c87.js.map
