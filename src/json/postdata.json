@@ -16,5 +16,11 @@
         "title": "Use Pre-Commit Hooks to Lint your Code",
         "description": "Use Black & Flake8 to auto-lint your python code on every commit",
         "url": "https://www.linkedin.com/posts/thisisak_how-to-lint-your-python-code-using-pre-commit-activity-7022580231756541953-YlLO?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+        "image": "bitbucket.webp",
+        "title": "BitBucket Java REST API Usage Guide",
+        "description": "Use the BitBucket Cloud Rest API in Java to automate your workflows",
+        "url": "https://faun.pub/how-to-use-bitbucket-cloud-rest-api-in-java-uses-cases-with-examples-d1a348a59c73"
     }
 ]

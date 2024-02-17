@@ -3,7 +3,7 @@ import Layout from '../components/layout.js'
 import Blob from '../components/blob.js'
 import Posts from '../components/posts.js'
 import Footer from '../components/footer.js'
-import { pageText,highlight, featuredPosts, autoMargin, headFormat, socialText, linkedinIcon, spotifyIcon, githubIcon } from '../components/layout.module.css'
+import { pageText,highlight,highlightRippling, highlightZeta, featuredPosts, autoMargin, headFormat, socialText, linkedinIcon, spotifyIcon, githubIcon } from '../components/layout.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
 
 const IndexPage = () => {
   return(
-    <Layout pageTitle="ArnavK.co">
+    <Layout pageTitle="ArnavK.tech">
     </Layout>
   );
 };
@@ -23,8 +23,7 @@ const BlobContent = () => {
 };
 const ParaAfterBlob = () => {
   return (
-  <p className={pageText}>&#x1F44B; Hey I'm Arnav, an infrastructure engineer based in Bangalore.
-  Currently working at <span className={highlight}>Rippling</span> in the DevX team, freeing up smart people to work on hard problems &#x1F3C3;</p>
+  <p className={pageText}>Hey👋 I'm Arnav, an infrastructure engineer (just a fancy term for someone who codes and automates processes in cloud). I'm fascinated by technology of all kinds but systems have my heart. I worked at <span className={highlightRippling}><a href="https://www.rippling.com" target="_blank">Rippling</a></span> in the Developer Experience(DevX) team and prior to that worked at <span className={highlightZeta}><a href="https://www.zeta.tech" target="_blank">Zeta</a></span> in the Platform Runtime team and partly in the Security Operations team.</p>
   );
 };
 

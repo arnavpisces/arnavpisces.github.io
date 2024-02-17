@@ -52,9 +52,21 @@ a:hover, a:active { text-decoration: none; color:white; }
     font-size: 1.8vw;
     margin-top:5vw;
     max-width: 650px;
+    text-align: justify;
 }
-.highlight{
-    color:#f8b11c;
+.highlight-rippling a{
+    background-color:#f8b11c;
+    padding: 2px 3px 2px 3px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.highlight-zeta a{
+    background-color:#5b2c93;
+    text-decoration: none;
+    padding: 2px 3px 2px 3px;
+    border-radius: 6px;
+    color: white;
 }
 .featured-posts{
     text-align: left;
