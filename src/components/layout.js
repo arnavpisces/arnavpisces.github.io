@@ -1,27 +1,22 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText
-} from '../components/layout.module.css'
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import '../styles/global.css'
+import '../styles/prism-theme.css'
 
-const Layout = ({pageTitle, children}) => {
+export default function Layout({ children }) {
   return (
-    <div className={container}>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}style={{ marginRight: "auto" }}>
-            <h1 className={heading}><Link to="#">{pageTitle}</Link></h1>
-          </li>
-          {/* <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li> */}
-          <li className={navLinkItem}><Link to="https://drive.google.com/file/d/166NT66GAg8mS8Yl1YNYSKTNVeh0OC-cd/view?usp=sharing" target="_blank" className={navLinkText}>Resume</Link></li>
-        </ul>
-      </nav>
-    </div>
+    <>
+      <Helmet>
+        <html lang='en' />
+        <meta charSet='utf-8' />
+        <title>Arnav Kumar</title>
+        <meta name="description" content="i just need a place to write" />
+        <meta name="keywords" content="arnav kumar, arnav pisces, personal blog" />
+        <meta name="author" content="@arnavpisces" />
+      </Helmet>
+      <div className="min-h-screen" style={{ backgroundColor: '#1A2733', color: '#FFFFFF' }}>
+        {children}
+      </div>
+    </>
   )
 }
-
-export default Layout

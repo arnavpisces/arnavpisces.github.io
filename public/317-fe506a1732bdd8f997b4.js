@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_visiting_card=self.webpackChunkgatsby_visiting_card||[]).push([[317],{4317:function(a,c,s){s.r(c),c.default=s.p+"static/gh-actions-cdbf9fcc332a54aad9217ab976758477.png"}}]);
-//# sourceMappingURL=317-fe506a1732bdd8f997b4.js.map

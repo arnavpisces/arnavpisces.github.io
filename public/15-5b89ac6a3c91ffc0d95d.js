@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[15],{8015:function(t,e,s){s.r(e),e.default=s.p+"static/prism2-f4329b812d4853dc457d150f12cd97e2.jpg"}}]);
-//# sourceMappingURL=15-5b89ac6a3c91ffc0d95d.js.map

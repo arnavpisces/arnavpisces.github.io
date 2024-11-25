@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[91],{6091:function(t,a,b){b.r(a),a.default=b.p+"static/monzo-bbb4f3f250bbc527920c3c99d960d6fb.png"}}]);
-//# sourceMappingURL=91-9bd68a37c7282fd554f7.js.map

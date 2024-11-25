@@ -1,76 +1,83 @@
-import * as React from "react"
-import Layout from '../components/layout.js'
-import Blob from '../components/blob.js'
-import Posts from '../components/posts.js'
-import Footer from '../components/footer.js'
-import { pageText,highlight,highlightRippling, highlightZeta, featuredPosts, autoMargin, headFormat, socialText, linkedinIcon, spotifyIcon, githubIcon } from '../components/layout.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpotify, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'gatsby'
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/Layout'
+import SubscribeForm from '../components/SubscribeForm'
 
+export default function HomePage({ data }) {
+  const posts = data.allMarkdownRemark.edges
 
-const IndexPage = () => {
-  return(
-    <Layout pageTitle="ArnavK.tech">
+  return (
+    <Layout>
+      <div className="mx-auto px-4 py-8" style= {{ maxWidth: '52rem' }}>
+        <header className="text-center mb-16">
+          <div className="w-12 h-12 mx-auto mb-4 rounded-full overflow-hidden border border-gray-700">
+            <img 
+              src="/images/arnav-kumar.jpeg"
+              alt="Arnav Kumar"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h1 className="text-base mb-4 tracking-widest text-gray-400">ARNAV  KUMAR</h1>
+          <p className="text-gray-400 mb-2 text-lg">
+            Software Engineer specialized in platform and cloud-native architectures. Previously at <a href="https://zeta.tech/" target='_blank' rel="noreferrer" className="underline">Zeta</a>, 
+            <a href="https://rippling.com/" target='_blank' rel="noreferrer" className="underline"> Rippling</a>, 
+            and <a href="https://quandlelabs.com/" target='_blank' rel="noreferrer" className="underline"> Quandle Labs</a>, building scalable infrastructure and driving efficiency in developer workflows. Currently experimenting with <a href="https://en.wikipedia.org/wiki/High-frequency_trading" target="_blank" rel='noreferrer'className='underline'>HFT</a> systems.
+          </p>
+          
+          <hr className="border-gray-500 my-5 w-1/4 mx-auto" />
+
+          <SubscribeForm />
+        </header>
+
+        <main>
+          {posts.map(({ node }) => (
+            <article 
+              key={node.id} 
+              className="mb-12 p-6 rounded-lg border border-gray-600 w-full max-w-3xl shadow-lg" 
+              style={{ backgroundColor: '#1A2733', borderWidth: '1px' }} 
+            >
+              <Link to={node.fields.slug}>
+                <div className="transition text-center">
+                  <time className="text-gray-400 text-sm">
+                    {node.frontmatter.date}
+                  </time>
+                  <h2 className="text-3xl font-bold text-white mt-0">
+                    {node.frontmatter.title}
+                  </h2>
+                  <p className="text-gray-300 mt-4 text-left text-lg">
+                    {node.excerpt}
+                  </p>
+                  <span className="inline-block mt-4 text-gray-400 hover:text-white border border-gray-600 rounded-full px-3 py-1">
+                    Read more
+                  </span>
+                </div>
+              </Link>
+            </article>
+          ))}
+        </main>
+      </div>
     </Layout>
-  );
-};
-const BlobContent = () => {
-  return (
-    <Blob insideText="Infrastructure Engineer who's keen on making complex systems simpler">
-    </Blob>
-  );
-};
-const ParaAfterBlob = () => {
-  return (
-  <p className={pageText}>Hey👋 I'm Arnav, an infrastructure engineer (just a fancy term for someone who codes and automates processes in cloud). I'm fascinated by technology of all kinds but systems have my heart. I worked at <span className={highlightRippling}><a href="https://www.rippling.com" target="_blank">Rippling</a></span> in the Developer Experience(DevX) team and prior to that worked at <span className={highlightZeta}><a href="https://www.zeta.tech" target="_blank">Zeta</a></span> in the Platform Runtime team and partly in the Security Operations team.</p>
-  );
-};
-
-const Post = ({ headTitle, className, link  }) => {
-  const classes = className ? `${featuredPosts} ${className}` : featuredPosts;
-  return(
-    <div className={autoMargin}>
-      <Link to href={link} target="_blank"><h2 className={classes}>{headTitle}</h2></Link>
-    </div>
   )
 }
 
-const Socials = () => {
-  return (
-    <div className={socialText}>
-        <Link to="https://linkedin.com/in/thisisak" target="_blank" className={linkedinIcon}>
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
-        </Link>
-        <Link to="https://open.spotify.com/user/22m7eefrydcotr3jtwx7cf5li?si=510a7ab91e894dc8" target="_blank" className={spotifyIcon}>
-          <FontAwesomeIcon icon={faSpotify} size="3x" />
-        </Link>
-        <Link to="https://github.com/arnavpisces" target="_blank" className={githubIcon}>
-          <FontAwesomeIcon icon={faGithub} size="3x" />
-        </Link>
-    </div>
-  )
-}
-
-const App = () => {
-  return (
-    <div>
-      <IndexPage />
-      <BlobContent />
-      <ParaAfterBlob />
-      <Post headTitle="Selected Posts" />
-      <Posts />
-      <Post headTitle="View More &#8594;" className={headFormat} link="https://www.linkedin.com/in/thisisak/recent-activity/shares/"/>
-      <Post headTitle="Socials" />
-      <Socials />
-      <Footer />
-    </div>
-  );
-};
-
-
-export const Head = () => <title >Arnav Kumar</title>
-
-// export default { IndexPage, BlobContent};
-export default App;
-// export default IndexPage;
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`
