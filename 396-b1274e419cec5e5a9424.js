@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[396],{4396:function(t,a,e){e.r(a),a.default=e.p+"static/gatsby-icon-d0cc6d1934003ce8acd700015b81f95f.png"}}]);
-//# sourceMappingURL=396-b1274e419cec5e5a9424.js.map

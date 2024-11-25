@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_visiting_card=self.webpackChunkgatsby_visiting_card||[]).push([[579],{5579:function(s,i,t){t.r(i),i.default=t.p+"static/prism3-7504c82f40341eed5640812bce94261a.png"}}]);
-//# sourceMappingURL=579-d9c53109d51501e3cb85.js.map

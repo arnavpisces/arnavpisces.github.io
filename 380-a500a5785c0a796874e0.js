@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_visiting_card=self.webpackChunkgatsby_visiting_card||[]).push([[380],{2380:function(e,i,t){t.r(i),i.default=t.p+"static/code-linting-0edcf13679153353e217472f102de028.jpeg"}}]);
-//# sourceMappingURL=380-a500a5785c0a796874e0.js.map

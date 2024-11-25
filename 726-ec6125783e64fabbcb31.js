@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_visiting_card=self.webpackChunkgatsby_visiting_card||[]).push([[726],{9726:function(t,e,i){i.r(e),e.default=i.p+"static/git-worktree-b62795285040c1bb9bd93557f6e34646.webp"}}]);
-//# sourceMappingURL=726-ec6125783e64fabbcb31.js.map

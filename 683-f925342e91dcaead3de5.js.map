@@ -1,1 +1,0 @@
-{"version":3,"file":"683-f925342e91dcaead3de5.js","mappings":"wIAAA,UAAe,IAA0B,mD","sources":["webpack://gatsby-visiting-card/./src/images/monzo.png"],"sourcesContent":["export default __webpack_public_path__ + \"static/monzo-bbb4f3f250bbc527920c3c99d960d6fb.png\";"],"names":[],"sourceRoot":""}

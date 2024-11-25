@@ -1,1 +1,0 @@
-{"version":3,"file":"317-fe506a1732bdd8f997b4.js","mappings":"wIAAA,UAAe,IAA0B,wD","sources":["webpack://gatsby-visiting-card/./src/images/gh-actions.png"],"sourcesContent":["export default __webpack_public_path__ + \"static/gh-actions-cdbf9fcc332a54aad9217ab976758477.png\";"],"names":[],"sourceRoot":""}
