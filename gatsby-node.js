@@ -1,5 +1,6 @@
 const { createFilePath } = require('gatsby-source-filesystem')
 const path = require('path')
+const fs = require('fs')
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === 'MarkdownRemark') {
@@ -40,3 +41,9 @@ exports.createPages = async ({ graphql, actions }) => {
    })
  })
 }
+exports.onPostBuild = () => {
+  fs.copyFileSync(
+    path.join(__dirname, 'CNAME'),
+    path.join(__dirname, 'public', 'CNAME')
+  );
+};
