@@ -48,6 +48,18 @@ module.exports = {
         pageTransitionDelay: 0, // Delay in milliseconds for page transitions
         enableWebVitalsTracking: true, // Tracks Web Vitals (Core Web Vitals metrics)
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Arnav Kumar',
+        short_name: 'Arnav',
+        start_url: '/',
+        background_color: '#1A2733',
+        theme_color: '#1A2733',
+        display: 'minimal-ui',
+        icon: 'src/images/cowboy.png', // Path to your favicon
+      },
+    },
   ],
 }
