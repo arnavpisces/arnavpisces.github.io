@@ -295,7 +295,7 @@ Running these implementations on my MacBook Air M2 with 16 GB RAM and Apple's M2
 
 ### The Verdict
 
-After analyzing the performance metrics of the three concurrency approaches, it's clear that both multithreading and AsyncIO are suitable options for tackling the 1 Billion Row Challenge. Both methods leveraged the I/O-bound nature of the task to achieve significant performance boosts. AsyncIO, in particular, demonstrated the fastest processing time and highest processing speed, making it an attractive choice for tasks involving concurrent I/O operations. Multithreading, on the other hand, offered a simpler implementation and competitive performance, making it a viable alternative.
+The performance metrics tell a clear story that both multithreading and AsyncIO are suitable options for tackling the `1 Billion Row Challenge`. Both methods leveraged the I/O-bound nature of the task to achieve significant performance boosts. AsyncIO, in particular, demonstrated the fastest processing time and highest processing speed, making it an attractive choice for tasks involving concurrent I/O operations. Although Multithreading did offer a simpler implementation and competitive performance, making it a viable alternative.
 
 Stay tuned for more performance-tuning adventures!
 
