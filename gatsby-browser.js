@@ -1,1 +1,1 @@
-import './src/styles/prism-theme.css'
+import "@fortawesome/fontawesome-free/css/all.min.css";

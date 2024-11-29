@@ -8,7 +8,7 @@ export default function HomePage({ data }) {
 
   return (
     <Layout>
-      <div className="mx-auto px-4 py-8" style= {{ maxWidth: '52rem' }}>
+      <div className="mx-auto px-4 py-8" style={{ maxWidth: '52rem' }}>
         <header className="text-center mb-16">
           <div className="w-12 h-12 mx-auto mb-4 rounded-full overflow-hidden border border-gray-700">
             <img 
@@ -24,6 +24,21 @@ export default function HomePage({ data }) {
             and <a href="https://quandlelabs.com/" target='_blank' rel="noreferrer" className="underline"> Quandle Labs</a>, building scalable infrastructure and driving efficiency in developer workflows. Currently experimenting with <a href="https://en.wikipedia.org/wiki/High-frequency_trading" target="_blank" rel='noreferrer'className='underline'>HFT</a> systems.
           </p>
           
+          <div className="flex justify-center space-x-4 mb-5">
+            <a href="https://www.linkedin.com/in/thisisak/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <i className="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://open.spotify.com/user/22m7eefrydcotr3jtwx7cf5li?si=76a4d1da0c3542a1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <i className="fab fa-spotify fa-2x"></i>
+            </a>
+            <a href="https://github.com/arnavpisces" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <i className="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:arnavpisces@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <i className="fas fa-envelope fa-2x"></i>
+            </a>
+          </div>
+
           <hr className="border-gray-500 my-5 w-1/4 mx-auto" />
 
           <SubscribeForm />
