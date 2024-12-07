@@ -5,6 +5,20 @@ module.exports = {
     author: '@arnavpisces',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-NQJDZ9LFBR", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -36,17 +50,6 @@ module.exports = {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=23d672bbce5cd548b0c23208b&id=c5e4440d15',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-NQJDZ9LFBR", // Replace with your actual tracking ID
-        head: true, // Puts tracking script in the head instead of the body
-        anonymize: true, // Anonymize IPs for GDPR compliance
-        respectDNT: true, // Respects "Do Not Track" settings in users' browsers
-        pageTransitionDelay: 0, // Delay in milliseconds for page transitions
-        enableWebVitalsTracking: true, // Tracks Web Vitals (Core Web Vitals metrics)
       },
     },
     {

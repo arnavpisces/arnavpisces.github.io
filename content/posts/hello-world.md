@@ -3,7 +3,7 @@ title: "Hello. World?"
 date: "2024-11-13"
 ---
 
-Another day, another micro-blogging site where I can have a little piece of the internet to write about all things tech. Being subservient to the internet, and all forms of social media, it seems kinda counterintuitive to build my own blogging website given that there are literally thousands of them out there. Yet, creating something of my own does fill me with a fiery passion for a short amount of time, and I want to muster passion from anywhere I can. 
+Another day, another blogging site where I can have a little piece of the internet to write about all things tech. Being subservient to the internet, and all forms of social media, it seems kinda counterintuitive to build my own blogging website given that there are literally thousands of them out there. Yet, creating something of my own does fill me with a fiery passion for a short amount of time, and I want to muster passion from anywhere I can. 
 This blog is hosted on Github Pages and hence it will be free to me forever (of course minus the nominal domain charges I pay every year).
 
 ### Tools I Used To Create This Blog
