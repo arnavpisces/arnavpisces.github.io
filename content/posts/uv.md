@@ -44,7 +44,7 @@ Total time         383.012s  37.485s
 ```
 That's a <b>90% improvement</b> in performance! My jaw was dropped and I knew that shipping new images and reducing build times in CI/CD pipelines are gonna be a breeze with this new tool.
 
-## Why uv is Life-Saver for CI/CD Pipelines
+## Why uv is a Life-Saver for CI/CD Pipelines
 - Faster dependency resolution..much much faster
 - Reduced resource usage and platform costs(this adds up when you have hundreds of builds running everyday)
 - Faster installation time of the tool itself (just one command to install)

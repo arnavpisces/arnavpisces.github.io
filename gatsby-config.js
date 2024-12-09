@@ -64,5 +64,12 @@ module.exports = {
         icon: 'src/images/cowboy.png', // Path to your favicon
       },
     },
+    {
+      resolve: 'gatsby-plugin-clarity',
+      options: {
+        clarity_project_id: 'pb8erhjgc2',
+        enable_on_dev_env: true
+      },
+    },
   ],
 }
