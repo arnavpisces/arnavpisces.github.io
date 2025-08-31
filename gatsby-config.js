@@ -6,6 +6,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Inter Tight:300,400,500,600,700,800,900`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
@@ -58,8 +67,8 @@ module.exports = {
         name: 'Arnav Kumar',
         short_name: 'Arnav',
         start_url: '/',
-        background_color: '#1A2733',
-        theme_color: '#1A2733',
+        background_color: '#000000',
+        theme_color: '#000000',
         display: 'minimal-ui',
         icon: 'src/images/cowboy.png', // Path to your favicon
       },

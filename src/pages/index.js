@@ -20,8 +20,7 @@ export default function HomePage({ data }) {
           </div>
           <h1 className="text-base mb-4 tracking-widest text-gray-400">ARNAV  KUMAR</h1>
           <p className="text-gray-400 mb-2 text-lg">
-            Software Engineer specializing in platform engineering and cloud-native architectures. Currently leading DevSecOps efforts at <a href="https://sprinklr.com/" target='_blank' rel="noreferrer" className="underline">Sprinklr</a> as a Senior Cloud Engineer. I've previously worked at <a href="https://zeta.tech/" target='_blank' rel="noreferrer" className="underline">Zeta</a>,
-            <a href="https://rippling.com/" target='_blank' rel="noreferrer" className="underline"> Rippling</a>,
+            Software Engineer specializing in platform engineering and cloud-native architectures. Currently leading DevSecOps efforts at <a href="https://sprinklr.com/" target='_blank' rel="noreferrer" className="underline">Sprinklr</a> as a Senior Cloud Engineer. I've previously worked at <a href="https://zeta.tech/" target='_blank' rel="noreferrer" className="underline">Zeta</a>, <a href="https://rippling.com/" target='_blank' rel="noreferrer" className="underline">Rippling</a>,
             and <a href="https://quandlelabs.com/" target='_blank' rel="noreferrer" className="underline"> Quandle Labs</a>, where I helped build scalable infrastructures and drove efficient developer workflows. 
           </p>
           <div className="flex justify-center space-x-4 mb-5">

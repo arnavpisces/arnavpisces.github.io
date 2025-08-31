@@ -74,7 +74,7 @@ const MagicBentoCard = ({ node, index, isVisible }) => {
       >
         <div className="magic-bento-content p-4 rounded-lg">
           <div className="magic-shimmer"></div>
-          <Link to={node.fields.slug}>
+          <Link to={node.fields.slug} className="no-underline">
             <div className="transition relative z-10">
               <time className="text-gray-400 text-sm text-center block uppercase">
                 {node.frontmatter.date}

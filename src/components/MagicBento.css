@@ -235,3 +235,11 @@
   opacity: 1;
   animation: shimmer-dance 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+.magic-bento a {
+  text-decoration: none !important;
+}
+
+.magic-bento a:hover {
+  text-decoration: none !important;
+}
