@@ -1,0 +1,58 @@
+.fuzzy-text {
+  font-family: 'Inter Tight', monospace;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.fuzzy-text.animating {
+  animation: fuzzy-glow 0.1s ease-in-out infinite alternate;
+}
+
+@keyframes fuzzy-glow {
+  0% {
+    text-shadow: 
+      0 0 2px rgba(255, 255, 255, 0.8),
+      0 0 4px rgba(255, 255, 255, 0.6),
+      0 0 6px rgba(255, 255, 255, 0.4);
+    filter: blur(0px);
+  }
+  100% {
+    text-shadow: 
+      0 0 4px rgba(255, 255, 255, 0.9),
+      0 0 8px rgba(255, 255, 255, 0.7),
+      0 0 12px rgba(255, 255, 255, 0.5);
+    filter: blur(0.5px);
+  }
+}
+
+.fuzzy-text-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.fuzzy-404 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.fuzzy-message {
+  font-size: 1.5rem;
+  color: #c9d1d9;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.fuzzy-link {
+  font-size: 1.125rem;
+  color: #58a6ff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.fuzzy-link:hover {
+  color: #ffffff;
+}

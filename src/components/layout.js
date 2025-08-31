@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <meta name="keywords" content="arnav kumar, arnav pisces, personal blog" />
         <meta name="author" content="@arnavpisces" />
       </Helmet>
-      <div className="min-h-screen" style={{ backgroundColor: '#1A2733', color: '#FFFFFF' }}>
+      <div className="min-h-screen" style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
         {children}
       </div>
     </>

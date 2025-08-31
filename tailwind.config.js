@@ -7,18 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter Tight', 'sans-serif'],
+      },
       typography: {
         DEFAULT: {
           css: {
+            fontFamily: 'Inter Tight, sans-serif',
             color: '#fff',
             h1: {
               color: '#fff',
+              fontFamily: 'Inter Tight, sans-serif',
             },
             h2: {
               color: '#fff',
+              fontFamily: 'Inter Tight, sans-serif',
             },
             h3: {
               color: '#fff',
+              fontFamily: 'Inter Tight, sans-serif',
             },
             strong: {
               color: '#fff',

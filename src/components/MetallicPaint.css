@@ -1,0 +1,72 @@
+@keyframes metallic-shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.metallic-paint {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.metallic-paint::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.1) 35%,
+    rgba(255, 255, 255, 0.3) 45%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 55%,
+    rgba(255, 255, 255, 0.1) 65%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+  background-position: -200% center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.metallic-paint:hover::before {
+  opacity: 1;
+  animation: metallic-shine 0.8s ease-out;
+}
+
+.metallic-paint:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Specific styling for social icons */
+.social-icon {
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.metallic-paint:hover .social-icon {
+  background: linear-gradient(
+    135deg,
+    #c0c0c0 0%,
+    #e8e8e8 25%,
+    #ffffff 50%,
+    #e8e8e8 75%,
+    #c0c0c0 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
