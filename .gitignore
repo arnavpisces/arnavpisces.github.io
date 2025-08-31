@@ -1,4 +1,3 @@
-public
 # Logs
 logs
 *.log
@@ -69,4 +68,4 @@ yarn-error.log
 .yarn-integrity
 
 # Gatsby build files
-public
+public/
