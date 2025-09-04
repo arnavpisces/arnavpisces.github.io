@@ -76,10 +76,10 @@ const MagicBentoCard = ({ node, index, isVisible }) => {
           <div className="magic-shimmer"></div>
           <Link to={node.fields.slug} className="no-underline">
             <div className="transition relative z-10">
-              <time className="text-gray-400 text-sm text-center block uppercase">
+              <time className="text-gray-400 text-sm text-left block uppercase">
                 {node.frontmatter.date}
               </time>
-              <h2 className="text-3xl font-bold text-white mt-1 mb-3 text-center hover:text-gray-200 transition-colors">
+              <h2 className="text-3xl font-bold text-white mt-1 mb-3 text-left hover:text-gray-200 transition-colors">
                 {node.frontmatter.title}
               </h2>
               <p className="text-gray-300 mb-3 text-left text-lg">
