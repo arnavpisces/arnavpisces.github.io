@@ -63,7 +63,7 @@ const MagicBentoCard = ({ node, index, isVisible }) => {
     >
       <article 
         ref={cardRef}
-        className="mb-12 w-full max-w-3xl magic-bento rounded-lg"
+        className="mb-12 w-full max-w-3xl magic-bento rounded-2xl"
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -72,7 +72,7 @@ const MagicBentoCard = ({ node, index, isVisible }) => {
           '--mouse-y': `${mousePosition.y}%`,
         }}
       >
-        <div className="magic-bento-content p-4 rounded-lg">
+        <div className="magic-bento-content p-4 rounded-2xl">
           <div className="magic-shimmer"></div>
           <Link to={node.fields.slug} className="no-underline">
             <div className="transition relative z-10">
