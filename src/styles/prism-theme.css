@@ -35,7 +35,7 @@ pre[class*="language-"] {
 	border-radius: 0.5em;
 	border: 1px solid #30363d;
 	font-size: 0.8em; 
-
+	position: relative;
 }
 
 :not(pre) > code[class*="language-"],
@@ -125,4 +125,49 @@ pre[class*="language-"] {
 
 .token.entity {
 	cursor: help;
+}
+
+/* Copy button styles */
+.code-copy-button {
+	position: absolute;
+	top: 0.75em;
+	right: 0.75em;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 6px;
+	padding: 0.5em;
+	cursor: pointer;
+	color: #f8f8f2;
+	transition: all 0.2s ease;
+	backdrop-filter: blur(4px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transform: translateY(-4px);
+	z-index: 10;
+}
+
+.code-copy-button:hover {
+	background: rgba(255, 255, 255, 0.15);
+	border-color: rgba(255, 255, 255, 0.3);
+	transform: translateY(-2px);
+}
+
+.code-copy-button:active {
+	transform: translateY(0);
+}
+
+/* Show copy button on hover of code block */
+pre[class*="language-"]:hover .code-copy-button {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Always show copy button on mobile/touch devices */
+@media (hover: none) {
+	.code-copy-button {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
