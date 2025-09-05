@@ -1,10 +1,10 @@
 ---
 title: "Vibe Coding Stack for Dummies"
-date: "2025-09-06"
+date: "2025-09-05"
 ---
 ## What is "Vibe Coding"?
 
-Vibe coding is writing code using AI - you focus on the **what** while AI handles the **how**. Perfect to build small but real projects without getting stuck on syntax or dependency hell(remember the times you spent 1.2 hours trying to install npm dependencies and setting up node). I was not too fond of the term when I first heard it but now it sounds completely apt. Agentic coding tools (Claude Code basically) made me realize that a lot of the times, AI coding is just vibes.
+Vibe coding is writing code using AI. You focus on the **what** while AI handles the **how**. Perfect to build small but real projects without getting stuck on syntax or dependency hell(remember the times you spent 1.2 hours trying to install npm dependencies and setting up node). I was not too fond of the term when I first heard it but now it sounds completely apt. Agentic coding tools (Claude Code basically) made me realize that a lot of the times, AI coding is just vibes.
 
 ## The Tools I Use
 
